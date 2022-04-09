@@ -1,0 +1,1816 @@
+* { margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+/*HEADER*/
+
+.titulo {background-color: rgb(66, 66, 66);
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin: 0px;
+}
+.titulo1 { 
+    color:  white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 60px;
+    padding: 60px;
+}
+
+.logo {
+    justify-content: right;
+    padding: 5px;
+    border:  20px;
+    width: 180px;
+}
+
+/*BARRA DE NAVEGACION*/
+
+.barramenu {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+
+.barramenu ul {
+    display: flex;
+    justify-content: space-between 10px;
+}
+.barramenu ul li{
+    list-style-type: none;
+}
+
+.barramenu ul li a {
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    font-size: 30px;
+    text-transform: uppercase;
+    transition: 1s;
+    border: 2px solid;
+    padding: 10px;
+}
+
+.barramenu:hover ul li a{
+    color: rgb(44, 43, 43);
+}
+
+.barramenu ul li a:hover{
+    color: white;
+    transform: scale(1.1);
+    background: rgb(57, 58, 57);
+    border: 1px rgb(57, 58, 57); 
+}
+
+/*CUERPO DEL INDEX*/
+
+.fotoprincipal {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.fotoprincipal1{
+    width: 1400px;
+    height: 700px;
+}
+
+.significado {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.descripcion {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding: 25px;
+}
+
+.fotosindex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+}
+.foto1{
+    width: 450px;
+    height: 450px;
+}
+
+.foto2{
+    width: 450px;
+    height: 450px;
+}
+
+.foto3{
+    width: 450px;
+    height: 450px;
+}
+
+
+/*FOOTEER*/ 
+footer {
+    background-color: rgb(66, 66, 66);
+    
+}
+.redesfooter {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    size-adjust: 570px;
+}
+.textofooter {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 25px;
+}
+
+.wpp-footer{
+    width: 40px;
+    height: 40px;
+    padding-right: 25px;
+    padding-top: 15px;
+}
+
+.face-footer{
+    width: 40px;
+    height: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+}
+
+.insta-footer{
+    width: 40px;
+    height: 40px;
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+
+/*CUERPO NOSOTROS*/
+
+.nosotros-conteiner{
+    display: grid;
+    grid-template-columns: 600px 600px;
+    column-gap: 150px;
+    row-gap: 150px;
+    justify-content: center;
+}
+
+.quienessomos{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    justify-self: center;
+    padding: 25px;
+}
+
+.fotoquienessomos{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 500px;
+    height: 500px;
+    padding: 25px;
+}
+
+.porque-elegirnos{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding: 25px;
+}
+
+.foto-porque-elegirnos{
+    grid-column: 2/ 3;
+    grid-row: 2 / 3;
+    width: 500px;
+    height: 500px;
+    padding: 25px;
+}
+
+.textoquienessomos{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    padding: 25px;
+}
+
+.texto-porque-elegirnos{
+    grid-column: 2/ 3;
+    grid-row: 3 / 4;
+    padding: 25px;
+}
+
+.titulo-calidad{
+    grid-column: 1/ 2;
+    grid-row: 4 / 5;
+    padding: 25px;
+}
+
+.foto-calidad{
+    grid-column: 1/ 2;
+    grid-row: 5 / 6;
+    width: 500px;
+    height: 500px;
+    padding: 25px;
+}
+
+.texto-calidad{
+    grid-column: 1/ 2;
+    grid-row: 6 / 7;
+    padding: 25px;
+}
+
+.titulo-flexibilidad{
+    grid-column: 2/ 3;
+    grid-row: 4 / 5;
+    padding: 25px;
+}
+
+.foto-flexibilidad{
+    grid-column: 2/ 3;
+    grid-row: 5 / 6;
+    width: 500px;
+    height: 500px;
+    padding: 25px;
+}
+
+.texto-flexibilidad{
+    grid-column: 2/ 3;
+    grid-row: 6 / 7;
+    padding: 25px;
+}
+/*CUERPO PRODUCTOS*/
+
+.productos-conteiner{
+    display: grid;
+    grid-template-areas:
+    "titulo titulo"
+    "subi hola"
+    "subi hola"
+    "no boca"
+    "no boca"
+    "mama mama"
+    "cine delfi"
+    "cine delfi"
+    "final terminar"
+    "final terminar";
+    grid-template-rows: repeat(400px);
+    padding: 40px;
+    justify-content: space-evenly;
+}
+
+.pantuflas-invierno{
+    grid-area: titulo;
+    padding: 25px;
+    justify-self: center;
+    font-size: 40px;
+}
+
+.invierno-dama-titulo{
+    grid-area: subi;
+    padding: 25px;
+}
+
+.invierno-dama-foto{
+    grid-area: no;
+    width: 400px;
+    height: 400px;
+    padding: 25px;
+}
+
+.invierno-caballero-titulo{
+    grid-area: hola;
+    padding: 25px;
+}
+
+.invierno-caballero-foto{
+    grid-area: boca;
+    width: 400px;
+    height: 400px;
+    padding: 25px;
+}
+
+.pantufla-verano{
+    grid-area: mama;
+    padding: 25px;
+    justify-self: center;
+    font-size: 40px;
+}
+
+.verano-dama-titulo{
+    grid-area: cine;
+    padding: 25px;
+}
+
+.verano-dama-foto{
+    grid-area: final;
+    width: 400px;
+    height: 400px;
+    padding: 25px;
+}
+
+.verano-caballero-titulo{
+    grid-area: delfi;
+    padding: 25px;
+}
+
+.verano-caballero-foto{
+    grid-area: terminar;
+    width: 400px;
+    height: 400px;
+    padding: 25px;
+}
+
+/*CUERPO TALLES*/
+
+.talles-titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding: 25px;
+    padding-bottom: 0px;
+}
+
+.talles-texto{
+    display: flex;
+    border: solid black 5px;
+    line-height: 55px;
+    justify-content: center;
+    margin: 40px;
+    padding: 15px;
+}
+
+
+.talles-dama-titulo{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.talles-dama-imagen{
+    margin-left: 400px;
+    padding: 50px;
+}
+
+.talles-caballero-titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.talles-caballero-imagen{
+    padding: 50px;
+    margin-left: 400px;
+}
+
+/*CUERPO CONTACTO*/
+
+.contactanos-titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    padding: 20px;
+}
+
+.contacto-container{
+    display: grid;
+    grid-template-areas: 
+    "foto direccion"
+    "foto ciudad"
+    "foto pais"
+    "foto horario"
+    "foto whatsapp";
+    grid-template-rows: repeat (5,200px);
+    justify-content: start;
+
+}
+
+.ubicacion{
+    grid-area: foto;
+    padding-right: 10px;
+}
+
+.dire{
+    grid-area: direccion;
+    font-size: 30px;
+}
+
+.ciu{
+    grid-area: ciudad;
+    font-size: 30px;
+}
+
+.country{
+    grid-area: pais;
+    font-size: 30px;
+}
+
+.hora{
+    grid-area: horario;
+    font-size: 30px;
+}
+
+.wpi{
+    grid-area: whatsapp;
+    color: black;
+    font-size: 30px;
+}
+
+.wpp-contacto{
+    width: 40px;
+    height: 40px;
+    font-style: none;
+    font-size: 30px;
+}
+
+.consulta-titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.formulario{
+    border: 2px solid black;
+    padding: 20px;
+    margin: 10px;
+
+}
+.formulario-nombre{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.formulario-numero{
+    font-weight: bold;
+    font-size: 20px; 
+}
+
+.formulario-texto{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/*RESPONSIVE*/
+
+/*INDEX*/
+
+/*MENOS DE 880*/ 
+
+@media screen and (min-width:700px) and (max-width: 880px) {
+    .barramenu {
+        display: none;
+    }
+
+    .responsive-index-bodyt{
+        display: grid;
+        grid-template-areas: 
+        "responsive1"
+        "responsive2"
+        "responsive4"
+        "responsive5"
+        "responsive6"
+        "responsive7"
+        "responsive8"
+        "responsive9"
+        "responsive10";
+    }
+
+    .fotoprincipal {
+        grid-area: responsive2;
+    }
+
+    .fotoprincipal1 {
+        width: 700px;
+        height: 500px;
+        padding: 20px;
+    }
+
+    .significado {
+        grid-area: responsive4;
+    }
+
+    .descripcion {
+        grid-area: responsive5;
+    }
+
+    .fotosindex {
+        display: grid;
+        grid-area: responsive6;
+        align-self: center;
+    }
+    .foto1 {
+        width: 700px;
+        height: 500px;
+        padding: 20px;
+}
+
+.foto2 {
+    width: 700px;
+        height: 500px;
+        padding: 20px;
+}
+
+.foto3 {
+    width: 700px;
+        height: 500px;
+        padding: 20px;
+}
+.header-responsive {
+grid-area: responsive1;
+}
+.responsive-footer {
+    grid-area: responsive10;
+} 
+}
+/*RESPONSIVE MENOS DE 700PX*/
+
+
+@media screen and (min-width:520px) and (max-width: 700px) {
+    .barramenu {
+        display: none;
+    }
+
+    .responsive-index-bodyt{
+        display: grid;
+        grid-template-areas: 
+        "responsive1"
+        "responsive2"
+        "responsive4"
+        "responsive5"
+        "responsive6"
+        "responsive7"
+        "responsive8"
+        "responsive9"
+        "responsive10";
+    }
+
+    .titulo1 {
+        font-size: 40px;
+    }
+
+    .fotoprincipal {
+        grid-area: responsive2;
+    }
+
+    .fotoprincipal1 {
+        width: 500px;
+        height: 300px;
+        padding: 20px;
+    }
+
+    .significado {
+        grid-area: responsive4;
+        padding: 50px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .descripcion {
+        grid-area: responsive5;
+        padding: 50px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .fotosindex {
+        display: grid;
+        grid-area: responsive6;
+        align-self: center;
+    }
+    .foto1 {
+        width: 500px;
+        height: 300px;
+        padding: 20px;
+}
+
+.foto2 {
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+}
+.foto3 {
+    width: 600px;
+}
+
+.header-responsive {
+grid-area: responsive1;
+}
+.responsive-footer {
+    grid-area: responsive10;
+} 
+}
+
+
+/*MENOS DE 520PX INDEX*/
+
+@media screen and (min-width:300px) and (max-width: 520px) {
+    .barramenu {
+        display: none;
+    }
+
+    .responsive-index-bodyt{
+        display: grid;
+        grid-template-areas: 
+        "responsive1"
+        "responsive2"
+        "responsive4"
+        "responsive5"
+        "responsive6"
+        "responsive7"
+        "responsive8"
+        "responsive9"
+        "responsive10";
+    }
+
+    .titulo1 {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    .fotoprincipal {
+        grid-area: responsive2;
+    }
+
+    .fotoprincipal1 {
+        width: 450px;
+        height: 200px;
+    }
+
+    .significado {
+        grid-area: responsive4;
+        padding: 50px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .descripcion {
+        grid-area: responsive5;
+        padding: 50px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .fotosindex {
+        display: grid;
+        grid-area: responsive6;
+        align-self: center;
+    }
+    .foto1 {
+        width: 400px;
+        height: 200px;
+        padding: 20px;
+        margin-left: 20px;
+}
+
+.foto2 {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    margin-left: 20px;
+}
+}
+
+.foto3 {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.header-responsive {
+grid-area: responsive1;
+}
+.responsive-footer {
+    grid-area: responsive10;
+} 
+
+@media screen and (min-width: 880px) and (max-width: 1200px) {
+    .foto1 {
+        width: 250px;
+        height: 300px;
+        padding: 10px;
+    }
+
+    .foto2 {
+        width: 250px;
+        height: 300px;
+        padding: 10px;
+    }
+
+    .foto3 {
+        width: 250px;
+        height: 300px;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .foto3 {
+        width: 350px;
+        height: 450px;
+        padding: 10px;
+    }
+    
+    .foto1 {
+        width: 350px;
+        height: 450px;
+        padding: 10px;
+    }
+
+    .foto2 {
+        width: 350px;
+        height: 450px;
+        padding: 10px;
+    }
+}
+
+
+/*TALLES*/
+
+/*300 A 1200*/
+
+@media screen and (min-width:300px) and (max-width:1200px) {
+
+    .body-talles {
+        display: grid;
+        grid-template-areas:
+        "talles1"
+        "talles2"
+        "talles3"
+        "talles4"
+        "talles5"
+        "talles6"
+        "talles7"
+        "talles8"
+        "talles9";
+    }
+
+    .titulo {
+        grid-area: talles1;
+    }
+
+    .barramenu {
+        grid-area: talles2;
+    }
+
+    .talles-titulo {
+        grid-area: talles3;
+    }
+
+    .talles-texto {
+        grid-area: talles4;
+    }
+
+    .talles-dama-titulo {
+        grid-area: talles5;
+    }
+    
+    .talles-dama-imagen {
+        grid-area: talles6;
+        margin: 0px;
+        padding: 20px;
+    }
+
+    .talles-caballero-titulo {
+        grid-area: talles7;
+    }
+
+    .talles-caballero-imagen {
+        margin: 0px;
+        padding: 20px;
+        grid-area: talles8;
+    }
+
+    .footer-talles {
+        grid-area: talles9;
+    }
+
+}
+
+/*650 a 800*/
+
+@media screen and (min-width:650px) and (max-width:800px) {
+
+    .body-talles {
+        display: grid;
+        grid-template-areas:
+        "talles1"
+        "talles2"
+        "talles3"
+        "talles4"
+        "talles5"
+        "talles6"
+        "talles7"
+        "talles8"
+        "talles9";
+    }
+
+    .titulo {
+        grid-area: talles1;
+    }
+
+    .barramenu {
+        grid-area: talles2;
+    }
+
+    .talles-titulo {
+        grid-area: talles3;
+    }
+
+    .talles-texto {
+        grid-area: talles4;
+    }
+
+    .talles-dama-titulo {
+        grid-area: talles5;
+    }
+    
+    .talles-dama-imagen {
+        grid-area: talles6;
+        margin: 60px;
+        padding: 20px;
+    }
+
+    .talles-caballero-titulo {
+        grid-area: talles7;
+    }
+
+    .talles-caballero-imagen {
+        margin: 60px;
+        padding: 20px;
+        grid-area: talles8;
+    }
+
+    .footer-talles {
+        grid-area: talles9;
+    }
+
+}
+
+/*800 a 1200*/
+
+@media screen and (min-width:800px) and (max-width:1000px) {
+
+    .body-talles {
+        display: grid;
+        grid-template-areas:
+        "talles1"
+        "talles2"
+        "talles3"
+        "talles4"
+        "talles5"
+        "talles6"
+        "talles7"
+        "talles8"
+        "talles9";
+    }
+
+    .titulo {
+        grid-area: talles1;
+    }
+
+    .barramenu {
+        grid-area: talles2;
+    }
+
+    .talles-titulo {
+        grid-area: talles3;
+    }
+
+    .talles-texto {
+        grid-area: talles4;
+    }
+
+    .talles-dama-titulo {
+        grid-area: talles5;
+    }
+    
+    .talles-dama-imagen {
+        grid-area: talles6;
+        margin-left: 120px;
+        padding: 20px;
+    }
+
+    .talles-caballero-titulo {
+        grid-area: talles7;
+    }
+
+    .talles-caballero-imagen {
+        margin-left: 120px;
+        padding: 20px;
+        grid-area: talles8;
+    }
+
+    .footer-talles {
+        grid-area: talles9;
+    }
+
+}
+
+/*1000 a 1200*/
+
+@media screen and (min-width:1000px) and (max-width:1200px) {
+
+    .body-talles {
+        display: grid;
+        grid-template-areas:
+        "talles1"
+        "talles2"
+        "talles3"
+        "talles4"
+        "talles5"
+        "talles6"
+        "talles7"
+        "talles8"
+        "talles9";
+    }
+
+    .titulo {
+        grid-area: talles1;
+    }
+
+    .barramenu {
+        grid-area: talles2;
+    }
+
+    .talles-titulo {
+        grid-area: talles3;
+    }
+
+    .talles-texto {
+        grid-area: talles4;
+    }
+
+    .talles-dama-titulo {
+        grid-area: talles5;
+    }
+    
+    .talles-dama-imagen {
+        grid-area: talles6;
+        margin-left: 280px;
+        padding: 20px;
+    }
+
+    .talles-caballero-titulo {
+        grid-area: talles7;
+    }
+
+    .talles-caballero-imagen {
+        margin-left: 280px;
+        padding: 20px;
+        grid-area: talles8;
+    }
+
+    .footer-talles {
+        grid-area: talles9;
+    }
+
+}
+
+/*RESPONSIVE CONTACTO*/
+
+/*300 A 700*/
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+    .body-contacto {
+        display: grid;
+        grid-template-areas: 
+        "contacto1"
+        "contacto2"
+        "contacto3"
+        "contacto4"
+        "contacto5"
+        "contacto6"
+        "contacto7"
+        "contacto8"
+        "contacto9"
+        "contacto10"
+        "contacto11"
+        "contacto12";
+    }
+
+    .header-responsive {
+        grid-area: contacto1;
+    }
+
+    .barramenu {
+        grid-area: contacto2;
+    }
+
+    .contactanos-titulo {
+        grid-area: contacto3;
+        justify-content: left;
+        padding-left: 40px;
+    }
+
+    .contacto-container {
+        grid-area: contacto4;
+    }
+
+    .ubicacion {
+        padding-left: 30px ;
+        width: 600px;
+        height: 300px;
+    }
+
+    .dire {
+        grid-area: contacto5;
+    padding-left: 80px;
+    padding-top: 50px;
+}
+
+    .ciu {
+        grid-area: contacto6;
+        padding-left: 80px;
+    }
+
+    .country {
+        grid-area: contacto7;
+        padding-left: 80px;
+    }
+
+    .hora {
+        grid-area: contacto8;
+        padding-left: 80px;
+    }
+
+    .wpi {
+        grid-area: contacto9;
+        padding-left: 80px;
+    }
+    .consulta-titulo {
+        grid-area: contacto10;
+        justify-content: left;
+        font-size: 50px;
+    }
+
+    .formulario {
+        grid-area: contacto11;
+        width: 550px;
+    }
+
+    .formulario-texto {
+        width: 550px;
+    }
+
+    .footer-contacto {
+        grid-area: contacto12;
+    }
+}
+
+/*700 a 1000*/
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    .body-contacto {
+        display: grid;
+        grid-template-areas: 
+        "contacto1"
+        "contacto2"
+        "contacto3"
+        "contacto4"
+        "contacto5"
+        "contacto6"
+        "contacto7"
+        "contacto8"
+        "contacto9"
+        "contacto10"
+        "contacto11"
+        "contacto12";
+    }
+
+    .header-responsive {
+        grid-area: contacto1;
+    }
+
+    .barramenu {
+        grid-area: contacto2;
+    }
+
+    .contactanos-titulo {
+        grid-area: contacto3;
+        justify-content: left;
+        padding-left: 150px;
+    }
+
+    .contacto-container {
+        grid-area: contacto4;
+    }
+
+    .ubicacion {
+        padding-left: 80px ;
+        width: 700px;
+        height: 500px;
+    }
+
+    .dire {
+        grid-area: contacto5;
+    padding-left: 150px;
+    padding-top: 50px;
+}
+
+    .ciu {
+        grid-area: contacto6;
+        padding-left: 150px;
+    }
+
+    .country {
+        grid-area: contacto7;
+        padding-left: 150px;
+    }
+
+    .hora {
+        grid-area: contacto8;
+        padding-left: 150px;
+    }
+
+    .wpi {
+        grid-area: contacto9;
+        padding-left: 150px;
+    }
+    .consulta-titulo {
+        grid-area: contacto10;
+        justify-content: left;
+        font-size: 50px;
+        padding-left: 100px;
+    }
+
+    .formulario {
+        grid-area: contacto11;
+        width: 700px;
+    }
+
+    .formulario-texto {
+        width: 700px;
+    }
+
+    .footer-contacto {
+        grid-area: contacto12;
+    }
+}
+
+
+/*1000 1150*/
+
+@media screen and (min-width: 1000px) and (max-width: 1150px) {
+    .body-contacto {
+        display: grid;
+        grid-template-areas: 
+        "contacto1 contacto1"
+        "contacto2 contacto2"
+        "contacto3 contacto3"
+        "contacto4 contacto5"
+        "contacto4 contacto5"
+        "contacto4 contacto5"
+        "contacto4 contacto5"
+        "contacto4 contacto5"
+        "contacto10 contacto10"
+        "contacto11 contacto11"
+        "contacto12 contacto12";
+    }
+
+    .header-responsive {
+        grid-area: contacto1;
+        justify-content: center;
+    }
+
+    .barramenu {
+        grid-area: contacto2;
+        justify-content: center;
+    }
+
+    .contactanos-titulo {
+        grid-area: contacto3;
+        justify-content: center;
+        padding-left: 50px;
+    }
+
+    .contacto-container {
+        grid-area: contacto4;
+    }
+
+    .responsive-contacto-datos {
+        grid-area: contacto5;
+    }
+
+    .ubicacion {
+        padding-left: 30px ;
+        width: 900px;
+        height: 600px;
+    }
+
+    .dire {
+        grid-area: contacto5;
+        justify-content: center;
+    padding-left: 150px;
+    padding-top: 50px;
+}
+
+    .ciu {
+        grid-area: contacto5;
+        padding-left: 150px;
+    }
+
+    .country {
+        grid-area: contacto5;
+        padding-left: 150px;
+    }
+
+    .hora {
+        grid-area: contacto5;
+        padding-left: 150px;
+    }
+
+    .wpi {
+        grid-area: contacto5;
+        padding-left: 150px;
+    }
+    .consulta-titulo {
+        grid-area: contacto10;
+        justify-content: center;
+        font-size: 50px;
+    }
+
+    .formulario {
+        grid-area: contacto11;
+        width: 900px;
+        justify-content: center;
+    }
+
+    .formulario-texto {
+        width: 900px;
+    justify-content: center
+    ;}
+
+    .footer-contacto {
+        grid-area: contacto12;
+    }
+}
+
+
+/*1150 en adelante*/
+
+@media screen and (min-width: 1150px) {
+    .body-contacto {
+        display: grid;
+        grid-template-areas: 
+        "contacto1"
+        "contacto2"
+        "contacto3"
+        "contacto4"
+        "contacto5"
+        "contacto6"
+        "contacto7"
+        "contacto8"
+        "contacto9"
+        "contacto10"
+        "contacto11"
+        "contacto12";
+    }
+
+    .header-responsive {
+        grid-area: contacto1;
+        justify-content: center;
+    }
+
+    .barramenu {
+        grid-area: contacto2;
+        justify-content: center;
+    }
+
+    .contactanos-titulo {
+        grid-area: contacto3;
+        justify-content: center;
+        padding-left: 50px;
+    }
+
+    .contacto-container {
+        grid-area: contacto4;
+    }
+
+    .ubicacion {
+        padding-left:  150px ;
+        width: 1000px;
+        height: 600px;
+        font-size: 25px;
+        
+    }
+
+    .dire {
+        grid-area: contacto5;
+        justify-content: center;
+    padding-left: 150px;
+    padding-top: 50px;
+    font-size: 25px;
+}
+
+    .ciu {
+        grid-area: contacto6;
+        padding-left: 150px;
+        font-size: 25px;
+    }
+
+    .country {
+        grid-area: contacto7;
+        padding-left: 150px;
+        font-size: 25px;
+    }
+
+    .hora {
+        grid-area: contacto8;
+        padding-left: 150px;
+        font-size: 25px;
+    }
+
+    .wpi {
+        grid-area: contacto9;
+        padding-left: 150px;
+        font-size: 25px;
+    }
+    .consulta-titulo {
+        grid-area: contacto10;
+        justify-content: center;
+        font-size: 50px;
+    }
+
+    .formulario {
+        grid-area: contacto11;
+        width: 1100px;
+        margin-left: 100px;
+    }
+
+    .formulario-texto {
+        width: 1100px;
+    ;}
+
+    .footer-contacto {
+        grid-area: contacto12;
+    }
+}
+
+/*RESPONSIVE NOSOTROS*/
+
+/*RESPONSIVE DE 300 A 600*/
+
+@media screen and (min-width:300px) and (max-width:700px) {
+    
+    .body-responsive-nosotros {
+        display: grid;
+        grid-template-areas: 
+        "nosotros1"
+        "nosotros2"
+        "nosotros3"
+        "nosotros4"
+        "nosotros5"
+        "nosotros6"
+        "nosotros7"
+        "nosotros8";
+    }
+
+    .nosotros-conteiner {
+        grid-area: nosotros2 ;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-responsive-nosotros {
+        grid-area: nosotros1;
+
+    }
+
+    .ca {
+        grid-area: nosotros4;
+    }
+
+    .fl {
+        grid-area: nosotros5;
+    }
+
+    .footer-nosotros {
+        grid-area: nosotros6;
+    }
+
+    .fotoquienessomos {
+        width: 250px;
+        height: 250px;
+    }
+
+    .foto-calidad {
+        width: 250px;
+        height: 250px;
+    }
+
+    .foto-flexibilidad {
+        width: 250px;
+        height: 250px;
+    }
+
+    .foto-porque-elegirnos {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/*RESPONSIVE 700 A 850*/
+
+
+@media screen and (min-width:700px) and (max-width:850px) {
+    
+    .body-responsive-nosotros {
+        display: grid;
+        grid-template-areas: 
+        "nosotros1"
+        "nosotros2"
+        "nosotros3"
+        "nosotros4"
+        "nosotros5"
+        "nosotros6"
+        "nosotros7"
+        "nosotros8";
+    }
+
+    .nosotros-conteiner {
+        grid-area: nosotros2 ;
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+    }
+
+    .header-responsive-nosotros {
+        grid-area: nosotros1;
+
+    }
+
+    .ca {
+        grid-area: nosotros4;
+    }
+
+    .fl {
+        grid-area: nosotros5;
+    }
+
+    .footer-nosotros {
+        grid-area: nosotros6;
+    }
+
+    .fotoquienessomos {
+        width: 550px;
+        height: 450px;
+    }
+
+    .foto-calidad {
+        width: 550px;
+        height: 450px;
+    }
+
+    .foto-flexibilidad {
+        width: 550px;
+        height: 450px;
+    }
+
+    .foto-porque-elegirnos {
+        width: 550px;
+        height: 450px;
+    }
+}
+
+
+
+/*responsive 850 a 1100*/
+
+@media screen and (min-width:850px) and (max-width:1100px) {
+    
+    .body-responsive-nosotros {
+        display: grid;
+        grid-template-areas: 
+        "nosotros1"
+        "nosotros2"
+        "nosotros3"
+        "nosotros4"
+        "nosotros5"
+        "nosotros6"
+        "nosotros7"
+        "nosotros8";
+    }
+
+    .nosotros-conteiner {
+        grid-area: nosotros2 ;
+        display: flex;
+        flex-direction: column;
+        font-size: 35px;
+    }
+
+    .header-responsive-nosotros {
+        grid-area: nosotros1;
+
+    }
+
+    .ca {
+        grid-area: nosotros4;
+    }
+
+    .fl {
+        grid-area: nosotros5;
+    }
+
+    .footer-nosotros {
+        grid-area: nosotros6;
+    }
+
+    .fotoquienessomos {
+        width: 500px;
+        height: 450px;
+    }
+
+    .foto-calidad {
+        width: 500px;
+        height: 450px;
+    }
+
+    .foto-flexibilidad {
+        width: 500px;
+        height: 450px;
+    }
+
+    .foto-porque-elegirnos {
+        width: 500px;
+        height: 450px;
+    }
+}
+
+
+@media screen and (min-width:1100px) {
+
+    .qs-pe {
+        padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ca-fl {
+        padding-left: 15px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .fotoquienessomos {
+        width: 500px;
+        height: 450px;
+    }
+
+    .foto-calidad {
+        width: 500px;
+        height: 450px;
+    }
+
+    .foto-flexibilidad {
+        width: 500px;
+        height: 450px;
+
+    }
+
+    .foto-porque-elegirnos {
+        width: 500px;
+        height: 450px;
+    }
+
+    .fl {
+        padding-left: 180px;
+    }
+}
+
+
+/*RESPONSIVE PRODUCTOS*/
+
+
+/*300 A 700*/
+
+
+@media screen and (min-width:300px) and (max-width:700px) {
+    
+    .body-responsive-productos {
+        display: grid;
+
+    grid-template-areas: 
+    "productos1"
+    "productos2"
+    "productos3";
+}
+
+.header-responsive-productos {
+    grid-area: productos1;
+}
+
+.productos-conteiner {
+    grid-area: productos2;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-productos {
+    productos3
+}
+
+.pantuflas-invierno {
+    font-size: 30px
+}
+
+.invierno-dama-titulo {
+    font-size: 20px;
+}
+
+.invierno-dama-foto {
+    width: 300px;
+    height: 300px;
+}
+
+.invierno-caballero-titulo {
+    font-size: 20px;
+}
+
+.invierno-caballero-foto {
+    width: 300px;
+    height: 300px;
+}
+
+.pantufla-verano {
+    font-size: 30px;
+}
+
+.verano-dama-titulo {
+    font-size: 20px;
+}
+
+.verano-dama-foto {
+    width: 300px;
+    height: 300px;
+}
+
+.verano-caballero-titulo {
+    font-size: 20px;
+}
+
+.verano-caballero-foto {
+    width: 300px;
+    height: 300px;
+}
+
+}
+
+
+/*RESPONSIVE 700 A 1OOO*/
+
+@media screen and (min-width:700px) and (max-width:1000px) {
+    
+    .body-responsive-productos {
+        display: grid;
+    
+    grid-template-areas: 
+    "productos1"
+    "productos2"
+    "productos3";
+    }
+    
+    .header-responsive-productos {
+    grid-area: productos1;
+    }
+    
+    .productos-conteiner {
+    grid-area: productos2;
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .footer-productos {
+    productos3
+    }
+    
+    .pantuflas-invierno {
+    font-size: 50px
+    }
+    
+    .invierno-dama-titulo {
+    font-size: 35px;
+    }
+    
+    .invierno-dama-foto {
+    width: 600px;
+    height: 600px;
+    }
+    
+    .invierno-caballero-titulo {
+    font-size: 35px;
+    }
+    
+    .invierno-caballero-foto {
+    width: 600px;
+    height: 600px;
+    }
+    
+    .pantufla-verano {
+    font-size: 50px;
+    }
+    
+    .verano-dama-titulo {
+    font-size: 35px;
+    }
+    
+    .verano-dama-foto {
+    width: 600px;
+    height: 600px;
+    }
+    
+    .verano-caballero-titulo {
+    font-size: 35px;
+    }
+    
+    .verano-caballero-foto {
+    width: 600px;
+    height: 600px;
+    }
+    
+}
+
+/*1000 a 1300*/
+
+@media screen and (min-width:1000px) and (max-width:1300px) {
+    
+    .body-responsive-productos {
+        display: grid;
+    
+    grid-template-areas: 
+    "productos1"
+    "productos2"
+    "productos3";
+    }
+    
+    .header-responsive-productos {
+    grid-area: productos1;
+    }
+    
+    .productos-conteiner {
+    grid-area: productos2;
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .footer-productos {
+    productos3
+    }
+    
+    .pantuflas-invierno {
+    font-size: 70px
+    }
+    
+    .invierno-dama-titulo {
+    font-size: 50px;
+    }
+    
+    .invierno-dama-foto {
+    width: 900px;
+    height: 800px;
+    }
+    
+    .invierno-caballero-titulo {
+    font-size: 50px;
+    }
+    
+    .invierno-caballero-foto {
+    width: 900px;
+    height: 800px;
+    }
+    
+    .pantufla-verano {
+    font-size: 70px;
+    }
+    
+    .verano-dama-titulo {
+    font-size: 5opx;
+    }
+    
+    .verano-dama-foto {
+    width: 900px;
+    height: 800px;
+    }
+    
+    .verano-caballero-titulo {
+    font-size: 50px;
+    }
+    
+    .verano-caballero-foto {
+    width: 900px;
+    height: 800px;
+    }
+    
+    }
+}
+
