@@ -378,6 +378,7 @@ footer {
     justify-content: center;
     font-size: 60px;
     padding: 20px;
+    animation-delay: 0,5s;
 }
 
 .contacto-container{
@@ -1616,9 +1617,7 @@ grid-area: responsive1;
     flex-direction: column;
 }
 
-.footer-productos {
-    productos3
-}
+
 
 .pantuflas-invierno {
     font-size: 30px
@@ -1691,7 +1690,7 @@ grid-area: responsive1;
     }
     
     .footer-productos {
-    productos3
+    grid-area: productos3;
     }
     
     .pantuflas-invierno {
@@ -1764,7 +1763,7 @@ grid-area: responsive1;
     }
     
     .footer-productos {
-    productos3
+    grid-area: productos3;
     }
     
     .pantuflas-invierno {
@@ -1812,5 +1811,3 @@ grid-area: responsive1;
     }
     
     }
-}
-
