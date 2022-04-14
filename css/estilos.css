@@ -452,37 +452,29 @@ footer {
     padding: 20px;
     font-weight: bold;
 }
-
-.formulario{
-    border: 2px solid black;
-    padding: 20px;
-    margin: 10px;
-
+.formulario-contacto {
+    border: solid 2px black;
 }
-.formulario-nombre{
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.formulario-numero{
-    font-weight: bold;
-    font-size: 20px; 
-}
-
-.formulario-texto{
-    font-weight: bold;
-    font-size: 20px;
 }
  /*BOOTSTRAP*/
 
- .navbar {
-     background-color: rgb(66, 66, 66);
+.navbar {
+    background-color: rgb(66, 66, 66);
  }
 
- .nav-item {
-     font-size: 33PX;
+.nav-item {
+     font-size: 33PX; 
  }
 
+
+ .formulario-contacto {
+     margin-bottom:  20px;
+ }
+
+ .form-label {
+     font-weight: bold;
+     font-size: 20px;
+ }
 /*RESPONSIVE*/
 
 /*INDEX*/

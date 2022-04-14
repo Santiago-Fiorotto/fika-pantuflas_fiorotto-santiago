@@ -24,7 +24,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         <a href="../index.html"><img class="logo animate__animated animate__rotateIn animate__slower 0,1s" src="../imagenes/fika logo.png" alt= logo></a>
     </div>
     <!--BARRA DE NAVEGACION-->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html"> <img src="../imagenes/fika logo.png" width="60px" alt="logo fika"> </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,30 +77,37 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         </p>
     </div>
     <!--FORMULARIO-->
+
     <article>
         <section>
             <h2 class="consulta-titulo">
                 Dejanos tu consulta
             </h2>
         </section>
-        <section class="formulario"> 
-            <form method="post">
-                <label class="formulario-nombre" for="nombre"> Nombre:</label>
-                <input type="text" name="nombre" placeholder="Ingresa tu nombre" required>
-                <label class="formulario-numero" for="numero"> Número:</label>
-                <input type="number" name="numero" placeholder="Ingresa tu número" required>
-                <p>
-                    <textarea class="formulario-texto" name="consulta" id="" cols="100" rows="10" placeholder="Ingresa tu comentario" required></textarea>
-                    <input type="submit">
-                    <input type="reset" value="Borrar">
-                </p>
-            </form>
-        </section>
+        <form class="container formulario-contacto" method="post">
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">NOMBRE</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre.." required >
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput2" class="form-label">NUMERO</label required >
+              <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="Teléfono..">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Ingrese su consulta.." cols="100" rows="6"></textarea>
+              <div class="col-12">
+                  <button type="submit" class="btn btn-success">Enviar</button>
+                </div>
+                <div class="col-12">
+                  <button type="reset" value="Borrar" class="btn btn-danger">Borrar todo</button>
+                </div>
+          </form>
     </article>
     
 </main>
 <!--FOOTER-->
-<footer class="footer-contacto">
+<footer class= "container-fluid text-center">
     <div class="redesfooter">
         <a href="https://api.whatsapp.com/send?phone=543534277821" target="_blank">
             <img class="wpp-footer animate__animated animate__tada animate__infinite" src="../imagenes/whatsapp.png" alt=" whatsapp">
