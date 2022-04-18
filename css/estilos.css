@@ -61,13 +61,12 @@
 }
 
 .foto3 {
-    width: 4550px;
+    width: 450px;
     height: 450px;
 }
 
-
-
 /*FOOTEER*/ 
+
 footer {
     background-image: linear-gradient(rgb(66, 66, 66), rgb(122, 119, 119)   );
     background-color: rgb(66, 66, 66);
@@ -307,7 +306,6 @@ footer {
     border: solid black 5px;
     line-height: 55px;
     justify-content: center;
-    margin: 40px;
     padding: 15px;
 }
 
@@ -320,7 +318,6 @@ footer {
 }
 
 .talles-dama-imagen{
-    margin-left: 400px;
     padding: 50px;
 }
 
@@ -333,7 +330,6 @@ footer {
 
 .talles-caballero-imagen{
     padding: 50px;
-    margin-left: 400px;
 }
 
 /*CUERPO CONTACTO*/
