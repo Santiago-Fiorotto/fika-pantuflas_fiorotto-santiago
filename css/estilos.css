@@ -923,225 +923,33 @@ grid-area: responsive1;
     }
 }
 
-
 /*RESPONSIVE PRODUCTOS*/
 
+@media screen and (min-width:1000px) {
+    .pantu-invierno {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
 
-/*300 A 700*/
-
-
-@media screen and (min-width:300px) and (max-width:700px) {
+    }
     
-    .body-responsive-productos {
-        display: grid;
+    .pantu-verano {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
-    grid-template-areas: 
-    "productos1"
-    "productos2"
-    "productos3";
+    }
+    
+
+@media screen and (min-width:300px) and (max-width:999px) {
+    .pantu-invierno {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .pantu-verano {
+            display: flex;
+            flex-direction: column;
+        }
 }
-
-.header-responsive-productos {
-    grid-area: productos1;
-}
-
-.productos-conteiner {
-    grid-area: productos2;
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-.pantuflas-invierno {
-    font-size: 30px
-}
-
-.invierno-dama-titulo {
-    font-size: 20px;
-}
-
-.invierno-dama-foto {
-    width: 300px;
-    height: 300px;
-}
-
-.invierno-caballero-titulo {
-    font-size: 20px;
-}
-
-.invierno-caballero-foto {
-    width: 300px;
-    height: 300px;
-}
-
-.pantufla-verano {
-    font-size: 30px;
-}
-
-.verano-dama-titulo {
-    font-size: 20px;
-}
-
-.verano-dama-foto {
-    width: 300px;
-    height: 300px;
-}
-
-.verano-caballero-titulo {
-    font-size: 20px;
-}
-
-.verano-caballero-foto {
-    width: 300px;
-    height: 300px;
-}
-
-}
-
-
-/*RESPONSIVE 700 A 1OOO*/
-
-@media screen and (min-width:700px) and (max-width:1000px) {
-    
-    .body-responsive-productos {
-        display: grid;
-    
-    grid-template-areas: 
-    "productos1"
-    "productos2"
-    "productos3";
-    }
-    
-    .header-responsive-productos {
-    grid-area: productos1;
-    }
-    
-    .productos-conteiner {
-    grid-area: productos2;
-    display: flex;
-    flex-direction: column;
-    }
-    
-    .footer-productos {
-    grid-area: productos3;
-    }
-    
-    .pantuflas-invierno {
-    font-size: 50px
-    }
-    
-    .invierno-dama-titulo {
-    font-size: 35px;
-    }
-    
-    .invierno-dama-foto {
-    width: 600px;
-    height: 600px;
-    }
-    
-    .invierno-caballero-titulo {
-    font-size: 35px;
-    }
-    
-    .invierno-caballero-foto {
-    width: 600px;
-    height: 600px;
-    }
-    
-    .pantufla-verano {
-    font-size: 50px;
-    }
-    
-    .verano-dama-titulo {
-    font-size: 35px;
-    }
-    
-    .verano-dama-foto {
-    width: 600px;
-    height: 600px;
-    }
-    
-    .verano-caballero-titulo {
-    font-size: 35px;
-    }
-    
-    .verano-caballero-foto {
-    width: 600px;
-    height: 600px;
-    }
-    
-}
-
-/*1000 a 1300*/
-
-@media screen and (min-width:1000px) and (max-width:1300px) {
-    
-    .body-responsive-productos {
-        display: grid;
-    
-    grid-template-areas: 
-    "productos1"
-    "productos2"
-    "productos3";
-    }
-    
-    .header-responsive-productos {
-    grid-area: productos1;
-    }
-    
-    .productos-conteiner {
-    grid-area: productos2;
-    display: flex;
-    flex-direction: column;
-    }
-    
-    .footer-productos {
-    grid-area: productos3;
-    }
-    
-    .pantuflas-invierno {
-    font-size: 70px
-    }
-    
-    .invierno-dama-titulo {
-    font-size: 50px;
-    }
-    
-    .invierno-dama-foto {
-    width: 900px;
-    height: 800px;
-    }
-    
-    .invierno-caballero-titulo {
-    font-size: 50px;
-    }
-    
-    .invierno-caballero-foto {
-    width: 900px;
-    height: 800px;
-    }
-    
-    .pantufla-verano {
-    font-size: 70px;
-    }
-    
-    .verano-dama-titulo {
-    font-size: 5opx;
-    }
-    
-    .verano-dama-foto {
-    width: 900px;
-    height: 800px;
-    }
-    
-    .verano-caballero-titulo {
-    font-size: 50px;
-    }
-    
-    .verano-caballero-foto {
-    width: 900px;
-    height: 800px;
-    }
-    
-    }
