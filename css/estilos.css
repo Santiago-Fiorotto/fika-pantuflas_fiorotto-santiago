@@ -302,42 +302,34 @@ footer {
 /*CUERPO TALLES*/
 
 .talles-titulo{
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    padding: 25px;
+    font-size: 30px;
+    padding: 15px;
     padding-bottom: 0px;
 }
 
 .talles-texto{
-    display: flex;
     border: solid black 5px;
     line-height: 55px;
-    justify-content: center;
     padding: 15px;
 }
 
 
 .talles-dama-titulo{
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
+    font-size: 30px;
     padding: 20px;
 }
 
 .talles-dama-imagen{
-    padding: 50px;
+    padding: 30px;
 }
 
 .talles-caballero-titulo{
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
+    font-size: 30px;
     padding: 20px;
 }
 
 .talles-caballero-imagen{
-    padding: 50px;
+    padding: 30px;
 }
 
 /*CUERPO CONTACTO*/
@@ -686,248 +678,19 @@ grid-area: responsive1;
     }
 }
 
+/*RESPONSIVE TALLES*/
 
-/*TALLES*/
-
-/*300 A 1200*/
-
-@media screen and (min-width:300px) and (max-width:1200px) {
-
-    .body-talles {
-        display: grid;
-        grid-template-areas:
-        "talles1"
-        "talles2"
-        "talles3"
-        "talles4"
-        "talles5"
-        "talles6"
-        "talles7"
-        "talles8"
-        "talles9";
-    }
-
-    .titulo {
-        grid-area: talles1;
-    }
-
-    .barramenu {
-        grid-area: talles2;
-    }
-
-    .talles-titulo {
-        grid-area: talles3;
-    }
-
-    .talles-texto {
-        grid-area: talles4;
-    }
-
-    .talles-dama-titulo {
-        grid-area: talles5;
-    }
-    
+@media screen and (min-width: 900px)  {
     .talles-dama-imagen {
-        grid-area: talles6;
-        margin: 0px;
-        padding: 20px;
-    }
-
-    .talles-caballero-titulo {
-        grid-area: talles7;
+        max-width: 900px;
     }
 
     .talles-caballero-imagen {
-        margin: 0px;
-        padding: 20px;
-        grid-area: talles8;
+        max-width: 900px;
     }
-
-    .footer-talles {
-        grid-area: talles9;
-    }
-
 }
 
-/*650 a 800*/
 
-@media screen and (min-width:650px) and (max-width:800px) {
-
-    .body-talles {
-        display: grid;
-        grid-template-areas:
-        "talles1"
-        "talles2"
-        "talles3"
-        "talles4"
-        "talles5"
-        "talles6"
-        "talles7"
-        "talles8"
-        "talles9";
-    }
-
-    .titulo {
-        grid-area: talles1;
-    }
-
-    .barramenu {
-        grid-area: talles2;
-    }
-
-    .talles-titulo {
-        grid-area: talles3;
-    }
-
-    .talles-texto {
-        grid-area: talles4;
-    }
-
-    .talles-dama-titulo {
-        grid-area: talles5;
-    }
-    
-    .talles-dama-imagen {
-        grid-area: talles6;
-        margin: 60px;
-        padding: 20px;
-    }
-
-    .talles-caballero-titulo {
-        grid-area: talles7;
-    }
-
-    .talles-caballero-imagen {
-        margin: 60px;
-        padding: 20px;
-        grid-area: talles8;
-    }
-
-    .footer-talles {
-        grid-area: talles9;
-    }
-
-}
-
-/*800 a 1200*/
-
-@media screen and (min-width:800px) and (max-width:1000px) {
-
-    .body-talles {
-        display: grid;
-        grid-template-areas:
-        "talles1"
-        "talles2"
-        "talles3"
-        "talles4"
-        "talles5"
-        "talles6"
-        "talles7"
-        "talles8"
-        "talles9";
-    }
-
-    .titulo {
-        grid-area: talles1;
-    }
-
-    .barramenu {
-        grid-area: talles2;
-    }
-
-    .talles-titulo {
-        grid-area: talles3;
-    }
-
-    .talles-texto {
-        grid-area: talles4;
-    }
-
-    .talles-dama-titulo {
-        grid-area: talles5;
-    }
-    
-    .talles-dama-imagen {
-        grid-area: talles6;
-        margin-left: 120px;
-        padding: 20px;
-    }
-
-    .talles-caballero-titulo {
-        grid-area: talles7;
-    }
-
-    .talles-caballero-imagen {
-        margin-left: 120px;
-        padding: 20px;
-        grid-area: talles8;
-    }
-
-    .footer-talles {
-        grid-area: talles9;
-    }
-
-}
-
-/*1000 a 1200*/
-
-@media screen and (min-width:1000px) and (max-width:1200px) {
-
-    .body-talles {
-        display: grid;
-        grid-template-areas:
-        "talles1"
-        "talles2"
-        "talles3"
-        "talles4"
-        "talles5"
-        "talles6"
-        "talles7"
-        "talles8"
-        "talles9";
-    }
-
-    .titulo {
-        grid-area: talles1;
-    }
-
-    .barramenu {
-        grid-area: talles2;
-    }
-
-    .talles-titulo {
-        grid-area: talles3;
-    }
-
-    .talles-texto {
-        grid-area: talles4;
-    }
-
-    .talles-dama-titulo {
-        grid-area: talles5;
-    }
-    
-    .talles-dama-imagen {
-        grid-area: talles6;
-        margin-left: 280px;
-        padding: 20px;
-    }
-
-    .talles-caballero-titulo {
-        grid-area: talles7;
-    }
-
-    .talles-caballero-imagen {
-        margin-left: 280px;
-        padding: 20px;
-        grid-area: talles8;
-    }
-
-    .footer-talles {
-        grid-area: talles9;
-    }
-
-}
 
 /*RESPONSIVE NOSOTROS*/
 
