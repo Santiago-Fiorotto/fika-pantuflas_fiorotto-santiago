@@ -123,7 +123,7 @@ footer {
     justify-self: center;
     padding: 25px;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .fotoquienessomos{
@@ -139,7 +139,7 @@ footer {
     grid-row: 1 / 2;
     padding: 25px;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .foto-porque-elegirnos{
@@ -167,7 +167,7 @@ footer {
     grid-row: 4 / 5;
     padding: 25px;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .foto-calidad{
@@ -189,7 +189,7 @@ footer {
     grid-row: 4 / 5;
     padding: 25px;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .foto-flexibilidad{
@@ -351,7 +351,7 @@ footer {
 }
 
 .ubicacion {
-    width:max-content;
+    width: max-content;
     height: max-content;
 }
 
