@@ -87,7 +87,7 @@
 
 /*FOOTEER*/ 
 footer {
-    background-image: linear-gradient ($color-header), rgb(122, 119, 119);
+    background-image: linear-gradient(($color-header),rgb(122, 119, 119));
     background-color: $color-header;
     .redesfooter {
         display: flex;
