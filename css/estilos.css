@@ -13,13 +13,15 @@
   padding: 15px;
   margin: 0px;
 }
-.titulo .titulo1 {
+
+.titulo1 {
   color: white;
   font-family: "IBM Plex Mono", monospace;
   font-size: 60px;
   padding: 60px;
 }
-.titulo .logo {
+
+.logo {
   justify-content: right;
   padding: 5px;
   border: 20px;
@@ -35,14 +37,10 @@
 }
 
 /*CUERPO DEL INDEX*/
-.fotoprincipal {
+.main-index .fotoprincipal {
   display: flex;
   justify-content: center;
   padding: 20px;
-}
-.fotoprincipal .fotoprincipal1 {
-  width: 1400px;
-  height: 700px;
 }
 
 .significado {
@@ -57,20 +55,12 @@
   justify-content: space-around;
   margin: 10px;
 }
-.fotosindex .foto1 {
+.fotosindex .foto1, .fotosindex .foto3, .fotosindex .foto2 {
   width: 450px;
   height: 450px;
 }
-.fotosindex .foto2 {
-  width: 450px;
-  height: 450px;
-}
-.fotosindex .foto3 {
-  width: 450px;
-  height: 450px;
-}
-
 /*FOOTEER*/
+/*MAP Y MAP GET*/
 footer {
   background-image: linear-gradient(rgb(66, 66, 66), rgb(122, 119, 119));
   background-color: rgb(66, 66, 66);
@@ -286,6 +276,7 @@ footer .insta-footer {
 }
 
 /*CUERPO TALLES*/
+/*MIXINS*/
 .talles-titulo {
   font-size: 30px;
   padding: 15px;
@@ -293,7 +284,7 @@ footer .insta-footer {
 }
 
 .talles-texto {
-  border: solid black 5px;
+  border: solid 5px black;
   line-height: 55px;
   padding: 15px;
 }
@@ -386,7 +377,7 @@ footer .insta-footer {
     display: none;
   }
 
-  .responsive-index-bodyt {
+  .responsive-index-body {
     display: grid;
     grid-template-areas: "responsive1" "responsive2" "responsive4" "responsive5" "responsive6" "responsive7" "responsive8" "responsive9" "responsive10";
   }
@@ -415,7 +406,7 @@ footer .insta-footer {
     align-self: center;
   }
 
-  .foto1 {
+  .foto1, .fotosindex .foto2, .fotosindex .foto3 {
     width: 700px;
     height: 500px;
     padding: 20px;
@@ -486,7 +477,7 @@ footer .insta-footer {
     align-self: center;
   }
 
-  .foto1 {
+  .foto1, .fotosindex .foto2, .fotosindex .foto3 {
     width: 500px;
     height: 300px;
     padding: 20px;
@@ -557,7 +548,7 @@ footer .insta-footer {
     align-self: center;
   }
 
-  .foto1 {
+  .foto1, .fotosindex .foto2, .fotosindex .foto3 {
     width: 400px;
     height: 200px;
     padding: 20px;
@@ -570,24 +561,24 @@ footer .insta-footer {
     padding: 20px;
     margin-left: 20px;
   }
-}
-.foto3 {
-  width: 400px;
-  height: 200px;
-  padding: 20px;
-  margin-left: 20px;
-}
 
-.header-responsive {
-  grid-area: responsive1;
-}
+  .foto3 {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    margin-left: 20px;
+  }
 
-.responsive-footer {
-  grid-area: responsive10;
-}
+  .header-responsive {
+    grid-area: responsive1;
+  }
 
+  .responsive-footer {
+    grid-area: responsive10;
+  }
+}
 @media screen and (min-width: 880px) and (max-width: 1200px) {
-  .foto1 {
+  .foto1, .fotosindex .foto2, .fotosindex .foto3 {
     width: 250px;
     height: 300px;
     padding: 10px;
@@ -612,7 +603,7 @@ footer .insta-footer {
     padding: 10px;
   }
 
-  .foto1 {
+  .foto1, .fotosindex .foto2, .fotosindex .foto3 {
     width: 350px;
     height: 450px;
     padding: 10px;

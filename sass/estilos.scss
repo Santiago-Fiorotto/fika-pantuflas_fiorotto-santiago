@@ -11,50 +11,52 @@
 
 /*HEADER*/
 
-.titulo {
-    background-color: $color-header;
+
+.titulo {background-color: rgb(66, 66, 66);
     display: flex;
     justify-content: center;
     padding: 15px;
     margin: 0px;
-
-    .titulo1 { 
-        color: white;
-        font-family: $tipografia-header ;
-        font-size: $tipografia-size-header ;
-        padding: 60px;
-    }
-
-    .logo {
-        justify-content: right;
-        padding: 5px;
-        border:  20px;
-        width: 120px;
-    }
 }
+.titulo1 { 
+    color:  white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 60px;
+    padding: 60px;
+}
+
+.logo {
+    justify-content: right;
+    padding: 5px;
+    border:  20px;
+    width: 120px;
+}
+
+
 
 /*BARRA DE NAVEGACION*/ 
 
-.navbar {
-    background-color: $color-header ;
+    .navbar {
+        background-color: $color-header ;
+        
+        .nav-item {
+            font-size: 33px;
+        }
     
-    .nav-item {
-        font-size: 33px;
-    }
 }
+
 
 /*CUERPO DEL INDEX*/
 
-.fotoprincipal {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-
-    .fotoprincipal1 {
-        width: 1400px;
-        height: 700px;
+.main-index {
+    .fotoprincipal {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
     }
 }
+
+
 
 .significado {
     display: flex;
@@ -74,18 +76,25 @@
     }
 
     .foto2 {
-        width: $width-fotos-index;
-        height: $height-fotos-index;
+    @extend .foto1;
     }
     
     .foto3 {
-        width: $width-fotos-index;
-        height: $height-fotos-index;
+    @extend .foto1; 
     }
-    
 }
+    
 
 /*FOOTEER*/ 
+
+/*MAP Y MAP GET*/ 
+
+$iconos-redes: (
+    'paddingtop': 15px,
+    'paddingright': 25px,
+    'paddingleft': 25px
+);
+
 footer {
     background-image: linear-gradient(($color-header),rgb(122, 119, 119));
     background-color: $color-header;
@@ -106,22 +115,22 @@ footer {
     .wpp-footer{
         width: $redes-size;
         height: $redes-size;
-        padding-right: 25px;
-        padding-top: 15px;
+        padding-right: map-get($map: $iconos-redes, $key: 'paddingright');
+        padding-top: map-get($map: $iconos-redes, $key: 'paddingtop' );
     }
 
     .face-footer{
         height: $redes-size;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-top: 15px;
+        padding-left: map-get($map: $iconos-redes , $key: 'paddingleft' );
+        padding-right: map-get($map: $iconos-redes, $key: 'paddingright');
+        padding-top: map-get($map: $iconos-redes, $key: 'paddingtop' );
     }
 
     .insta-footer{
         width: $redes-size;
         height: $redes-size;
-        padding-left: 25px;
-        padding-top: 15px;
+        padding-left: map-get($map: $iconos-redes , $key: 'paddingleft' );
+        padding-top: map-get($map: $iconos-redes, $key: 'paddingtop' );
     }
 }
 
@@ -319,22 +328,26 @@ footer {
 
 /*CUERPO TALLES*/
 
+/*MIXINS*/ 
+
+@mixin fontmixin ($mixinsize, $mixinpadding) {
+    font-size: $mixinsize;
+    padding: $mixinpadding;
+}
 .talles-titulo{
-    font-size: 30px;
-    padding: 15px;
+    @include fontmixin(30px,15px);
     padding-bottom: 0px;
 }
 
 .talles-texto{
-    border: solid black 5px;
+  border: solid 5px black;
     line-height: 55px;
-    padding: 15px;
+    padding: 15px
 }
 
 
 .talles-dama-titulo{
-    font-size: 30px;
-    padding: 20px;
+    @include fontmixin(30px,20px);
 }
 
 .talles-dama-imagen{
@@ -342,8 +355,7 @@ footer {
 }
 
 .talles-caballero-titulo{
-    font-size: 30px;
-    padding: 20px;
+   @include fontmixin(30px,20px);
 }
 
 .talles-caballero-imagen{
@@ -424,7 +436,7 @@ footer {
         display: none;
     }
 
-    .responsive-index-bodyt{
+    .responsive-index-body {
         display: grid;
         grid-template-areas: 
         "responsive1"
@@ -467,17 +479,16 @@ footer {
         padding: 20px;
 }
 
-.foto2 {
-    width: 700px;
+    .foto2 {
+        width: 700px;
         height: 500px;
         padding: 20px;
 }
-
-.foto3 {
-    width: 700px;
+    .foto3 {
+        width: 700px;
         height: 500px;
         padding: 20px;
-}
+    }
 .header-responsive {
 grid-area: responsive1;
 }
@@ -632,8 +643,6 @@ grid-area: responsive1;
     padding: 20px;
     margin-left: 20px;
 }
-}
-
 .foto3 {
     width: 400px;
     height: 200px;
@@ -647,6 +656,7 @@ grid-area: responsive1;
 .responsive-footer {
     grid-area: responsive10;
 } 
+}
 
 @media screen and (min-width: 880px) and (max-width: 1200px) {
     .foto1 {
@@ -962,4 +972,4 @@ grid-area: responsive1;
             display: flex;
             flex-direction: column;
         }
-}
+    }
