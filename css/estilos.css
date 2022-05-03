@@ -195,12 +195,8 @@ footer .insta-footer {
 }
 
 /*CUERPO PRODUCTOS*/
-.productos-conteiner {
-  display: grid;
-  grid-template-areas: "titulo titulo" "carrusel carrusel" "subi hola" "subi hola" "no boca" "no boca" "mama mama" "carruselll carruselll" "cine delfi" "cine delfi" "final terminar" "final terminar";
-  grid-template-rows: repeat(400px);
-  padding: 40px;
-  justify-content: space-evenly;
+.carousel-slide {
+  width: 60%;
 }
 
 .pantuflas-invierno {
@@ -370,13 +366,15 @@ footer .insta-footer {
 }
 
 /*RESPONSIVE*/
+/*BARRA DE NAVEGACION*/
+@media screen and (max-width: 990px) {
+  .nav-link {
+    font-size: 20px;
+  }
+}
 /*INDEX*/
 /*MENOS DE 880*/
 @media screen and (min-width: 700px) and (max-width: 880px) {
-  .barramenu {
-    display: none;
-  }
-
   .responsive-index-body {
     display: grid;
     grid-template-areas: "responsive1" "responsive2" "responsive4" "responsive5" "responsive6" "responsive7" "responsive8" "responsive9" "responsive10";
@@ -787,29 +785,24 @@ footer .insta-footer {
     display: flex;
     flex-direction: row;
   }
-
-  .fotoquienessomos {
+  .ca-fl .fl {
+    padding-left: 230px;
+  }
+  .ca-fl .fotoquienessomos {
     width: 500px;
     height: 450px;
   }
-
-  .foto-calidad {
+  .ca-fl .foto-calidad {
     width: 500px;
     height: 450px;
   }
-
-  .foto-flexibilidad {
+  .ca-fl .foto-flexibilidad {
     width: 500px;
     height: 450px;
   }
-
-  .foto-porque-elegirnos {
+  .ca-fl .foto-porque-elegirnos {
     width: 500px;
     height: 450px;
-  }
-
-  .fl {
-    padding-left: 180px;
   }
 }
 /*RESPONSIVE PRODUCTOS*/

@@ -188,7 +188,6 @@ footer {
     grid-row: 3 / 4;
     padding: 25px;
 }
-
 .titulo-calidad{
     grid-column: 1/ 2;
     grid-row: 4 / 5;
@@ -232,26 +231,13 @@ footer {
     grid-row: 6 / 7;
     padding: 25px;
 }
+
+
+
 /*CUERPO PRODUCTOS*/
 
-.productos-conteiner{
-    display: grid;
-    grid-template-areas:
-    "titulo titulo"
-    "carrusel carrusel"
-    "subi hola"
-    "subi hola"
-    "no boca"
-    "no boca"
-    "mama mama"
-    "carruselll carruselll"
-    "cine delfi"
-    "cine delfi"
-    "final terminar"
-    "final terminar";
-    grid-template-rows: repeat(400px);
-    padding: 40px;
-    justify-content: space-evenly;
+.carousel-slide {
+    width: 60%;
 }
 
 .pantuflas-invierno{
@@ -427,15 +413,20 @@ footer {
  }
 /*RESPONSIVE*/
 
+/*BARRA DE NAVEGACION*/ 
+
+@media screen and (max-width:990px) {
+    .nav-link {
+        font-size: 20px;
+    }
+    
+}
+
 /*INDEX*/
 
 /*MENOS DE 880*/ 
 
 @media screen and (min-width:700px) and (max-width: 880px) {
-    .barramenu {
-        display: none;
-    }
-
     .responsive-index-body {
         display: grid;
         grid-template-areas: 
@@ -915,6 +906,9 @@ grid-area: responsive1;
         padding-left: 15px;
         display: flex;
         flex-direction: row;
+
+    .fl {
+        padding-left: 230px;
     }
     
     .fotoquienessomos {
@@ -938,9 +932,7 @@ grid-area: responsive1;
         height: 450px;
     }
 
-    .fl {
-        padding-left: 180px;
-    }
+}
 }
 
 /*RESPONSIVE PRODUCTOS*/
