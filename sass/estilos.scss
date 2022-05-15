@@ -136,110 +136,64 @@ footer {
 
 /*CUERPO NOSOTROS*/
 
-.nosotros-conteiner{
-    display: grid;
-    grid-template-columns: 600px 600px;
-    column-gap: 150px;
-    row-gap: 20px;
+.abcd {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    .card-nosotros {
+        max-width: 95%;
+    }
+}
+
+.efgh {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 30px;
+        .card-nosotros {
+            max-width: 95%;
+        }
+}
+
+.titulo-nosotross{
+    display: flex;
     justify-content: center;
+    padding: 15px;
 }
-
-.quienessomos{
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    justify-self: center;
-    padding: 25px;
-    font-weight: bold;
-    font-size: 40px;
-}
-
-.fotoquienessomos{
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    width: 500px;
-    height: 500px;
-    padding: 25px;
-}
-
-.porque-elegirnos{
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    padding: 25px;
-    font-weight: bold;
-    font-size: 40px;
-}
-
-.foto-porque-elegirnos{
-    grid-column: 2/ 3;
-    grid-row: 2 / 3;
-    width: 500px;
-    height: 500px;
-    padding: 25px;
-}
-
-.textoquienessomos{
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-    padding: 25px;
-}
-
-.texto-porque-elegirnos{
-    grid-column: 2/ 3;
-    grid-row: 3 / 4;
-    padding: 25px;
-}
-.titulo-calidad{
-    grid-column: 1/ 2;
-    grid-row: 4 / 5;
-    padding: 25px;
-    font-weight: bold;
-    font-size: 40px;
-}
-
-.foto-calidad{
-    grid-column: 1/ 2;
-    grid-row: 5 / 6;
-    width: 500px;
-    height: 500px;
-    padding: 25px;
-}
-
-.texto-calidad{
-    grid-column: 1/ 2;
-    grid-row: 6 / 7;
-    padding: 25px;
-}
-
-.titulo-flexibilidad{
-    grid-column: 2/ 3;
-    grid-row: 4 / 5;
-    padding: 25px;
-    font-weight: bold;
-    font-size: 40px;
-}
-
-.foto-flexibilidad{
-    grid-column: 2/ 3;
-    grid-row: 5 / 6;
-    width: 500px;
-    height: 500px;
-    padding: 25px;
-}
-
-.texto-flexibilidad{
-    grid-column: 2/ 3;
-    grid-row: 6 / 7;
-    padding: 25px;
-}
-
 
 
 /*CUERPO PRODUCTOS*/
 
-.carousel-slide {
-    width: 60%;
+.carousel-inner img{
+    height: 750px;
 }
 
+.img-thumbnail-dama-invierno {
+    max-width: 480px;
+    max-height: 500px;
+    padding-bottom: 15px;
+}
+
+.img-thumbnail-caballero-invierno {
+    max-width: 480px;
+    max-height: 500px;
+    padding-bottom: 15px;
+}
+
+.img-thumbnail-dama-verano {
+    max-width: 480px;
+    max-height: 500px;
+    padding-bottom: 15px;
+
+}
+
+.img-thumbnail-caballero-verano {
+    max-width: 480px;
+    max-height: 500px;
+    padding-bottom: 15px;
+
+}
 .pantuflas-invierno{
     grid-area: titulo;
     padding: 25px;
@@ -255,7 +209,7 @@ footer {
 #carouselExampleIndicators {
     display: grid;
     grid-area: carrusel ;
- }
+}
 
 .invierno-dama-foto{
     grid-area: no;
@@ -590,7 +544,7 @@ grid-area: responsive1;
     }
 
     .titulo1 {
-        font-size: 20px;
+        font-size: 30px;
         margin-left: 15px;
     }
     .fotoprincipal {
@@ -702,238 +656,25 @@ grid-area: responsive1;
 }
 
 
+/*RESPONSIVE NOSOTROS*/ 
 
-/*RESPONSIVE NOSOTROS*/
-
-/*RESPONSIVE DE 300 A 600*/
-
-@media screen and (min-width:300px) and (max-width:700px) {
-    
-    .body-responsive-nosotros {
-        display: grid;
-        grid-template-areas: 
-        "nosotros1"
-        "nosotros2"
-        "nosotros3"
-        "nosotros4"
-        "nosotros5"
-        "nosotros6"
-        "nosotros7"
-        "nosotros8";
-    }
-
-    .nosotros-conteiner {
-        grid-area: nosotros2 ;
+@media screen and (max-width: 1200px) {
+    .abcd {
         display: flex;
         flex-direction: column;
+        .img-thumbnail-dama-verano {
+            min-width: 96%;
+            min-height: 96%;
+        } 
     }
-
-    .header-responsive-nosotros {
-        grid-area: nosotros1;
-
-    }
-
-    .ca {
-        grid-area: nosotros4;
-    }
-
-    .fl {
-        grid-area: nosotros5;
-    }
-
-    .footer-nosotros {
-        grid-area: nosotros6;
-    }
-
-    .fotoquienessomos {
-        width: 250px;
-        height: 250px;
-    }
-
-    .foto-calidad {
-        width: 250px;
-        height: 250px;
-    }
-
-    .foto-flexibilidad {
-        width: 250px;
-        height: 250px;
-    }
-
-    .foto-porque-elegirnos {
-        width: 250px;
-        height: 250px;
-    }
-}
-
-/*RESPONSIVE 700 A 850*/
-
-
-@media screen and (min-width:700px) and (max-width:850px) {
-    
-    .body-responsive-nosotros {
-        display: grid;
-        grid-template-areas: 
-        "nosotros1"
-        "nosotros2"
-        "nosotros3"
-        "nosotros4"
-        "nosotros5"
-        "nosotros6"
-        "nosotros7"
-        "nosotros8";
-    }
-
-    .nosotros-conteiner {
-        grid-area: nosotros2 ;
+    .efgh {
         display: flex;
         flex-direction: column;
-        font-size: 30px;
-    }
-
-    .header-responsive-nosotros {
-        grid-area: nosotros1;
-
-    }
-
-    .ca {
-        grid-area: nosotros4;
-    }
-
-    .fl {
-        grid-area: nosotros5;
-    }
-
-    .footer-nosotros {
-        grid-area: nosotros6;
-    }
-
-    .fotoquienessomos {
-        width: 550px;
-        height: 450px;
-    }
-
-    .foto-calidad {
-        width: 550px;
-        height: 450px;
-    }
-
-    .foto-flexibilidad {
-        width: 550px;
-        height: 450px;
-    }
-
-    .foto-porque-elegirnos {
-        width: 550px;
-        height: 450px;
-    }
-}
-
-
-
-/*responsive 850 a 1100*/
-
-@media screen and (min-width:850px) and (max-width:1100px) {
-    
-    .body-responsive-nosotros {
-        display: grid;
-        grid-template-areas: 
-        "nosotros1"
-        "nosotros2"
-        "nosotros3"
-        "nosotros4"
-        "nosotros5"
-        "nosotros6"
-        "nosotros7"
-        "nosotros8";
-    }
-
-    .nosotros-conteiner {
-        grid-area: nosotros2 ;
-        display: flex;
-        flex-direction: column;
-        font-size: 35px;
-    }
-
-    .header-responsive-nosotros {
-        grid-area: nosotros1;
-
-    }
-
-    .ca {
-        grid-area: nosotros4;
-    }
-
-    .fl {
-        grid-area: nosotros5;
-    }
-
-    .footer-nosotros {
-        grid-area: nosotros6;
-    }
-
-    .fotoquienessomos {
-        width: 500px;
-        height: 450px;
-    }
-
-    .foto-calidad {
-        width: 500px;
-        height: 450px;
-    }
-
-    .foto-flexibilidad {
-        width: 500px;
-        height: 450px;
-    }
-
-    .foto-porque-elegirnos {
-        width: 500px;
-        height: 450px;
-    }
-}
-
-
-@media screen and (min-width:1100px) {
-
-    .qs-pe {
-        padding-left: 15px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .ca-fl {
-        padding-left: 15px;
-        display: flex;
-        flex-direction: row;
-
-    .fl {
-        padding-left: 230px;
+        
     }
     
-    .fotoquienessomos {
-        width: 500px;
-        height: 450px;
-    }
-
-    .foto-calidad {
-        width: 500px;
-        height: 450px;
-    }
-
-    .foto-flexibilidad {
-        width: 500px;
-        height: 450px;
-
-    }
-
-    .foto-porque-elegirnos {
-        width: 500px;
-        height: 450px;
-    }
-
 }
-}
+
 
 /*RESPONSIVE PRODUCTOS*/
 
@@ -952,16 +693,15 @@ grid-area: responsive1;
     }
 
     }
-    
 
-@media screen and (min-width:300px) and (max-width:999px) {
-    .pantu-invierno {
-        display: flex;
-        flex-direction: column;
-    }
-
-        .pantu-verano {
+    @media screen and (min-width:300px) and (max-width:999px) {
+        .pantu-invierno {
             display: flex;
             flex-direction: column;
+        }
+    
+            .pantu-verano {
+                display: flex;
+                flex-direction: column;
         }
     }
